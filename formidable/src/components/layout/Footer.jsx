@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Twitter, Linkedin, Mail, Globe } from 'lucide-react';
+import { Shield, Share2, Link as LinkIcon, Mail, Globe } from 'lucide-react';
 
 const LINKS = {
   Platform: [
@@ -32,20 +32,22 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://twitter.com"
+                href="https://x.com/formidable_et"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors"
+                title="X / Twitter"
               >
-                <Twitter size={16} />
+                <Share2 size={16} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/formidable-et"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors"
+                title="LinkedIn"
               >
-                <Linkedin size={16} />
+                <LinkIcon size={16} />
               </a>
               <a
                 href="mailto:hello@formidable.et"

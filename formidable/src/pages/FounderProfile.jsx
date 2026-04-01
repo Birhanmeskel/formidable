@@ -2,8 +2,8 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   ArrowLeft,
   CheckCircle2,
-  Linkedin,
-  Twitter,
+  Link as LinkIcon,
+  Share2,
   MapPin,
   GraduationCap,
   Briefcase,
@@ -68,8 +68,9 @@ export default function FounderProfile() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors"
+                    title="LinkedIn"
                   >
-                    <Linkedin size={16} />
+                    <LinkIcon size={16} />
                   </a>
                 )}
                 {founder.socialLinks?.twitter && (
@@ -78,8 +79,9 @@ export default function FounderProfile() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors"
+                    title="X / Twitter"
                   >
-                    <Twitter size={16} />
+                    <Share2 size={16} />
                   </a>
                 )}
               </div>
